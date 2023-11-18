@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/all.css">
+        <script src="https://kit.fontawesome.com/7b55d0ab6f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+    <section class="banner"></section>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+<div id="header">
+    <div class="container">
+        <nav>
+            <ul id="sidemenu">
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Future Software Engineer</p>
+            <h1>Hi, I'm <span>Raditya Haidar M</span><br>from <span>Indonesia</span></h1>
+        </div>
+    </div>
+</div>
+ <!-- -----------About---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="About-col-1">
+                <img src="Images/user.png">
+            </div>
+            <div class="About-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello! Welcome to my website! My name is Raditya Haidar M, but you can call me Radit, I'm a 10 grader student and this is my first time to code and design a personal website, I just started to learn how to code around 4 and a half months ago, so if you have any suggestions to help my learning process, don't hestitate to contact me! Hope you have a great day!</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Software and Web</span><br>Engineering and Developing</li>
+                        <li><span>Software</span><br>Sofware Engineering and Development</li>
+                        <li><span>Web Development</span><br>Building Android/Windows apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023 - Current</span><br>None</li>
+                        <li><span>2020 - 2023</span><br>Best Hafizh for Tasmi' 11 Juz, 3 Gold Medal of English National Olympiad and 1 Silver Medal of Science National Olympiad</li>
+                        <li><span>2018 - 2020</span><br>Managed to memorize 30 Juz of Qur'an within one and a half years</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023 - Current</span><br>Senior Highschool Student of SMA Islam Sinar Cendekia</li>
+                        <li><span>2020 - 2023</span><br>Junior Highschool Student of Nurul Fikri Boarding School, Serang</li>
+                        <li><span>214 - 2020</span><br>Primary School Student of Syafana Islamic School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+ <!-- -----------Portfolio---------- -->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/work-1.jpg">
+                <div class="layer">
+                    <h3>My Pictoblox Basic Block Coding</h3>
+                    <p>Here are some of the process to practice my logic skills before getting into the real coding using general programming language </p>
+                    <a href="https://github.com/HaidarRaditya/Pictoblox-Project"><i class="fas fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work-2.jpeg">
+                <div class="layer">
+                    <h3>Python Learning Project</h3>
+                    <p>Here are the project that I made by myself to note every Python logical script/code that are usually used for programming</p>
+                    <a href="https://github.com/HaidarRaditya/Python-Learning"><i class="fas fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work-3.jpg">
+                <div class="layer">
+                    <h3>Arduino C++ Coding</h3>
+                    <p>Here are my Arduino C++ Codes I used for my Robotic Projects and learning</p>
+                    <a href="https://github.com/HaidarRaditya/Arduino-Project"><i class="fas fa-link"></i></a>
+                </div>  
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+ </div>
+
+ <!-- -----------Contact---------- -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>maheswarahaidarraditya@gmail.com</p>
+                <p><i class="fas fa-phone-square"></i>081289833983</p>
+                <div class="div social-icons">
+                    <a href="https://www.instagram.com/raditya_hm.png/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/DrLenenvorne"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://github.com/HaidarRaditya"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Raditya Made with <i class="fa-solid fa-heart"></i> by VS Code</p>
+    </div>
+ </div>
+ 
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyvRJOIPUwBZ14QJd-IxyH469zl5BmUfa0sRFVxVywnLrwCdPILB7jUovZbufmpLVSB/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent succesfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+
+  </script>
+
+
+
+</body>
+</html>
